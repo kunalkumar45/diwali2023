@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Wishing You Happy </title>
 	<link rel="stylesheet" href="style.css">
-
+	
+</div>
 </head>
 
 <body>
@@ -17,16 +18,23 @@
 		</h2>
 		<p>By : Kunal Kumar</p>
 		<p>Front End Web Developer</p>
-		<audio src="diwali badhai.mp3" preload="auto" autoplay loop style="visibility: hidden;"></audio>
-	</div>
+	<audio  autoplay id="music">
+		<source src="diwali badhai.mp3">
+	</audio>
+	
+	
+	<script>
+		window.addEventListener('click', ()=>{
+			document.getElementById("music").play()
+		})
+	</script>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script  src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="jquery.fireworks.js"></script>
 	<script type="text/javascript">
 		$.noConflict();
 		jQuery('body').fireworks();
 	</script>
-
 
 </body>
 
