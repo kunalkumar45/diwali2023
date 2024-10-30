@@ -16,14 +16,19 @@
 		<p>Wishing you a festival of lights.</p>
 		<h2>Happy <c>Diwali</c>
 		</h2>
-		<p>By : Kunal Kumar</p>
-		<p>Front End Web Developer</p>
+		<p style="margin-bottom: 10px;"> May the festival of lights brighten your life with happiness and success.</p>
+		<p style="color: red;">With Best Wishes,</p>
+		<p> Kunal Kumar</p>
+		<p>Frontend Developer at Kosi Digital</p>
 	<audio  autoplay id="music">
 		<source src="diwali badhai.mp3">
 	</audio>
 	
 	
 	<script>
+		window.addEventListener('load', ()=>{
+			document.getElementById("music").play()
+		})
 		window.addEventListener('click', ()=>{
 			document.getElementById("music").play()
 		})
